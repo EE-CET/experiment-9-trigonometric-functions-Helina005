@@ -1,14 +1,18 @@
+
+
+    import java.util.Scanner;
+
 public class Trigonometry {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double degree = sc.nextDouble();
 
-    // TODO: Create 'public static double sine(double angle)'
-    
+        double rad = degree * Math.PI / 180;
 
-    // TODO: Create 'public static double cosine(double angle)'
-    
+        double sine = Math.sin(rad);
+        double cosine = Math.cos(rad);
 
-    
-        // TODO: Read angle
-        // TODO: Call sine() and cosine()
-        // TODO: Print results in the required format
-    
+        System.out.println("Sine: " + sine);
+        System.out.println("Cosine: " + cosine);
+    }
 }
